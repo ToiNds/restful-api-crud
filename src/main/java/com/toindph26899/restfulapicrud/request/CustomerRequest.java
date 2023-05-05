@@ -31,7 +31,7 @@ public class CustomerRequest {
 
     @NotNull(message = "Age not be empty")
     @Pattern(regexp = "^[0-9]+", message = "Age must be an integer")
-    @AgeValidation(message = "Age between 18 to 50")
+    @AgeValidation(message = "Age must be an integer and Age between 18 to 50")
     private String age;
 
     @NotNull(message = "Gender not be empty")
