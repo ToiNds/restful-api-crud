@@ -20,7 +20,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class CustomerRestController {
 
-    private CustomerService customerService;
+    private final CustomerService customerService;
 
     public CustomerRestController(CustomerService customerService) {
         this.customerService = customerService;
